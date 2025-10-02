@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulir Pendaftaran</title>
+</head>
+<body>
+
+  <h1>Formulir Pendaftaran Pelatihan Cybersecurity</h1>
+  
+  <form action="/submit-data" method="post">
+    <fieldset>
+      <legend>Data Peserta</legend>
+      
+      <p>
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required>
+      </p>
+
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+      
+      <p>
+        <label>Pilihan Peran Minat Cybersecurity:</label><br>
+        <input type="radio" id="tester" name="minat" value="Pentester">
+        <label for="tester">Ethical Hacker / Pentester</label><br>
+        <input type="radio" id="analyst" name="minat" value="Analyst">
+        <label for="analyst">Security Analyst</label><br>
+        <input type="radio" id="ciso" name="minat" value="CISO">
+        <label for="ciso">GRC / CISO</label>
+      </p>
+
+      <p>
+        <label for="komentar">Alasan Bergabung:</label><br>
+        <textarea id="komentar" name="komentar" rows="4" cols="50"></textarea>
+      </p>
+
+      <p>
+        <input type="submit" value="Kirim Data">
+      </p>
+    </fieldset>
+  </form>
+
+</body>
+</html>
